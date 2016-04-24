@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:id="@+id/smallCover" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/tvName"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/smallCover"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="genres"
+        android:id="@+id/tvDGenres"
+        android:layout_below="@+id/tvName"
+        android:layout_toEndOf="@+id/smallCover"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Albums"
+        android:id="@+id/tvAlbums"
+        android:layout_toEndOf="@+id/smallCover"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="5dp"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/tvDGenres"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
